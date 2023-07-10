@@ -1,0 +1,10 @@
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\bin\Debug\netstandard2.0\PhotoLibrary.deps.json
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\bin\Debug\netstandard2.0\PhotoLibrary.dll
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\bin\Debug\netstandard2.0\PhotoLibrary.pdb
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\obj\Debug\netstandard2.0\PhotoLibrary.csproj.AssemblyReference.cache
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\obj\Debug\netstandard2.0\PhotoLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\obj\Debug\netstandard2.0\PhotoLibrary.AssemblyInfoInputs.cache
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\obj\Debug\netstandard2.0\PhotoLibrary.AssemblyInfo.cs
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\obj\Debug\netstandard2.0\PhotoLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\obj\Debug\netstandard2.0\PhotoLibrary.dll
+C:\Users\jpscott\Desktop\InheritanceExamples\PhotoLibrary\obj\Debug\netstandard2.0\PhotoLibrary.pdb

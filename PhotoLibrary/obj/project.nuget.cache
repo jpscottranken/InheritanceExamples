@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "z7sAIlwMxS2g6VrUIxIgxiL6laOCdEL5qoyygfcjtH/Sk6JPb4JqDBlh6rX+vgdeNdcMfq2hGipYA1SaCwtNKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jpscott\\Desktop\\InheritanceExamples\\PhotoLibrary\\PhotoLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jpscott\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jpscott\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

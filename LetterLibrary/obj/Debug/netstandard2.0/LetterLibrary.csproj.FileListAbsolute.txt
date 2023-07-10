@@ -1,0 +1,10 @@
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\bin\Debug\netstandard2.0\LetterLibrary.deps.json
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\bin\Debug\netstandard2.0\LetterLibrary.dll
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\bin\Debug\netstandard2.0\LetterLibrary.pdb
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\obj\Debug\netstandard2.0\LetterLibrary.csproj.AssemblyReference.cache
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\obj\Debug\netstandard2.0\LetterLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\obj\Debug\netstandard2.0\LetterLibrary.AssemblyInfoInputs.cache
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\obj\Debug\netstandard2.0\LetterLibrary.AssemblyInfo.cs
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\obj\Debug\netstandard2.0\LetterLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\obj\Debug\netstandard2.0\LetterLibrary.dll
+C:\Users\jpscott\Desktop\InheritanceExamples\LetterLibrary\obj\Debug\netstandard2.0\LetterLibrary.pdb
