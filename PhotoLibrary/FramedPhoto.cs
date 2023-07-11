@@ -17,29 +17,29 @@ namespace PhotoLibrary
         //  Style Enumeration
         public enum Style
         {
-            SIMPLE  = 0,
-            MODERN  = 1,
-            ANTIQUE = 2,
-            VINTAGE = 3,
-            ECLETIC = 4
+            SIMPLE   = 0,
+            MODERN   = 1,
+            ANTIQUE  = 2,
+            VINTAGE  = 3,
+            ECLECTIC = 4
         }
 
         //  Instance variables
-        protected Material _theMaterial;
-        protected Style    _theStyle;
+        protected Material _material;
+        protected Style    _style;
 
         //  Full-Arg Constructor
         public FramedPhoto(decimal w, decimal h,
                            Material m, Style s)
                     : base(w, h)    
         {
-            _theMaterial = m;
-            _theStyle    = s;
+            _material = m;
+            _style    = s;
         }
 
         //  Getters and Setters
-        public Material TheMaterial => _theMaterial;
-        public Style    TheStyle => _theStyle;
+        public Material TheMaterial => _material;
+        public Style    TheStyle => _style;
 
         //  Override the ToString() Method
         public override string ToString()

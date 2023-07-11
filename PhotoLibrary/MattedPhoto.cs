@@ -15,17 +15,17 @@ namespace PhotoLibrary
         }
 
         //  Instance Variable
-        protected Color _theColor;
+        protected Color _color;
 
         //  Full-Arg Constructor
         public MattedPhoto(decimal w, decimal h, Color c)
                     : base(w, h)
         {
-            _theColor = c;
+            _color = c;
         }
 
         //  Getter and Setter
-        public Color TheColor => _theColor;
+        public Color TheColor => _color;
 
         //  Override the ToString() Method
         public override string ToString()

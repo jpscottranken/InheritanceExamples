@@ -167,9 +167,9 @@ namespace LB2_Photos
                         break;
 
                     default:
-                        gbColor.Enabled = false;
-                        gbMaterial.Enabled = false;
-                        gbStyle.Enabled = false;
+                        gbColor.Enabled     = false;
+                        gbMaterial.Enabled  = false;
+                        gbStyle.Enabled     = false;
                         break;
                 }
             }
@@ -191,7 +191,7 @@ namespace LB2_Photos
             if (sender is RadioButton)
             {
                 radioButtonMaterial = (RadioButton)sender;
-                materialStr = radioButtonColor.Name.Substring(3);
+                materialStr = radioButtonMaterial.Name.Substring(3);
             }
         }
 
@@ -201,15 +201,19 @@ namespace LB2_Photos
             if (sender is RadioButton)
             {
                 radioButtonStyle = (RadioButton)sender;
-                styleStr = radioButtonColor.Name.Substring(3);
+                styleStr = radioButtonStyle.Name.Substring(3);
             }
         }
 
-        //  Calculate picture code
+        //  Calculate picture cost
         private void CalculateCost()
         {
             decimal areaCost  = CalculateAreaCost();
             decimal frameCost = CalculateFrameCost();
+            if (frameCost == -1)
+            {
+                return;
+            }
             totalCost = areaCost + frameCost;
             lblTotalCost.Text = "Total Cost: " + totalCost.ToString("c");
         }
@@ -241,10 +245,22 @@ namespace LB2_Photos
         {
             decimal fc = 0.0M;
 
+            if ((!radUnframed.Checked) &&
+                (!radMatted.Checked) &&
+                (!radFramed.Checked))
+            {
+                MessageBox.Show("You Must Choose A Frame Style!",
+                                "NO FRAME STYLE CHOSEN",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                return -1M;
+            }
+
             switch(radioButtonFrame.Name.Substring(3))
             {
                 case "Unframed":
                     fc = UNFRAMED;
+                    //  Instantiate a new Photo object
                     Photo p = new Photo(width, height);
                     lblPictureStats.Text = p.ToString();
                     break;
@@ -254,6 +270,7 @@ namespace LB2_Photos
                     MattedPhoto.Color colorEnum = (MattedPhoto.Color)Enum.Parse(
                                     typeof(MattedPhoto.Color),
                                     radioButtonColor.Text.ToUpper());
+                    //  Instantiate a new MattedPhoto object
                     MattedPhoto mp = new MattedPhoto(width, height, colorEnum);
                     lblPictureStats.Text = mp.ToString();
                     break;
@@ -267,6 +284,7 @@ namespace LB2_Photos
                     FramedPhoto.Style styleEnum = (FramedPhoto.Style)Enum.Parse(
                                     typeof(FramedPhoto.Style),
                                     radioButtonStyle.Text.ToUpper());
+                    //  Instantiate a new FramedPhoto object
                     FramedPhoto fp = new FramedPhoto(width, height, 
                                                      materialEnum, styleEnum);
                     lblPictureStats.Text = fp.ToString();
@@ -286,8 +304,8 @@ namespace LB2_Photos
             ClearMaterial();
             ClearStyle();
             txtHeight.Text = "";
+            txtWidth.Text  = "";
             txtWidth.Focus();
-            txtWidth.Text = "";
         }
 
         //  Clear the three types of frames radio buttons
